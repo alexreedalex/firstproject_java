@@ -87,8 +87,10 @@ public class homeworkLesson1 {
             //Задача №2
             //Посчитать (a+b)^2 = ?, при a=3, b=5
 
+            int result = homeworkLesson1.function(3,5); // функция выведена ниже
+            System.out.println(result); // вывод результата
 
-
+            // done
 
 
 
@@ -98,7 +100,24 @@ public class homeworkLesson1 {
             // 2,3,2,17,15
             // Создать массив чисел, в котором будут: все числа из этих двух массивов,
             // и результат умножения чисел с одинаковым порядковым номером
-            //
+
+            int[] myArray11 = new int[5];
+            myArray[0] = 1;
+            myArray[1] = 2;
+            myArray[2] = 5;
+            myArray[3] = 7;
+            myArray[4] = 10;
+
+            int[] myArray22 = new int[5];
+            myArray[0] = 2;
+            myArray[1] = 3;
+            myArray[2] = 2;
+            myArray[3] = 17;
+            myArray[4] = 15;
+
+            int[] myArray33 = new int[5];
+
+
             //Ожидаемый результат:
             //1,2,5,7,10,2,3,2,17,15,2,6,10,119,150
             //(первый массив - 1,2,5,7,10), (второй массив - 2,3,2,17,15),
@@ -125,4 +144,7 @@ public class homeworkLesson1 {
             //Используемые технологии: String.find, String.replaceAll, String.split, String.join, String.contains, String.substring
             //Регулярные выражения, класс StringBuilder
         }
+    public static int function(int a, int b) {
+        return (a + b) * (a + b);
+    }
     }
