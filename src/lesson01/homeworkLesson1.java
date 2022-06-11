@@ -1,5 +1,7 @@
 package lesson01;
 
+import java.util.Arrays;
+
 public class homeworkLesson1 {
         public static void main(String[] args) {
             //Базовый уровень
@@ -56,9 +58,11 @@ public class homeworkLesson1 {
             myArray[2] = 'c';
             myArray[3] = 'd';
             myArray[4] = 'e';
-            System.out.println(myArray); // выводит массив
+            String myString0 = Arrays.toString(myArray);
+            System.out.println(myString0);
             myArray[3] = 'h';
-            System.out.println(myArray); // выводит массив с заменой
+            String myString01 = Arrays.toString(myArray);
+            System.out.println(myString01);
 
             // done
 
@@ -68,8 +72,25 @@ public class homeworkLesson1 {
             //Задача №1
             //Произвести преобразование "234" в число типа int и прибавить к этому числу длину строки "some_text"
 
+            String myString = "234";
+//            int A = Integer.valueOf(myString); // преобразует в обьект Integer, но нам, видимо, нужен второй вариант
+            int B = Integer.parseInt(myString); // возвращает примитивный int в качестве вывода - условие задачи?
+            String phrase = "some_text"; // добавляем поставленную строку
+            int length = phrase.length(); // узнаем длину строки
+            int exercise = B + length; // суммируем значения
+            System.out.println(exercise); // вывод суммы для проверки
+
+            // done
+
+
+
             //Задача №2
             //Посчитать (a+b)^2 = ?, при a=3, b=5
+
+
+
+
+
 
             //Задача №3
             //Создать два массив чисел:
