@@ -47,7 +47,9 @@ public class myHomeworkLesson2 {
 
         Spider homeSpider = new Spider(8, "Spidy");
         Fly homeFly = new Fly(6, "Maggot");
-
+        System.out.println("У " + homeSpider.name + " " + homeSpider.legs + " ног.");
+        System.out.println("А у " + homeFly.getName() + " " + homeFly.getLegs() + " ног.");
+        //просто попробовал так и так вывести
     }
 }
 
